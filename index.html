@@ -5,90 +5,115 @@
 <head>
 
     <title>Andy Ni</title>
+
     <link rel="stylesheet" type="text/css" href="all.css">
     <link rel="stylesheet" type="text/css" href="index.css">
 
 </head>
 
 <body>
+
+    <div id="jump_sidebar">
+
+        <a href="#about_me" class="jump">
+            <div>About Me</div>
+        </a>
+        <a href="#projects" class="jump">
+            <div>Projects</div>
+        </a>
+        <a href="#contact_me" class="jump">
+            <div>Contact Me</div>
+        </a>
+
+    </div>
     
-    <div id="intro">
+    <div id="main_body">
 
-        <h1 id="intro_h1">
+        <div id="intro">
 
-            <span id="hello">Hello</span>, my name is <em id="name">Andy Ni</em>,<br>
-            a sophomore pursuing <span id="major">Electrical and Computer Engineering</span> at <br>
-            the <span id="university">University of Texas at Austin</span>.
+            <h1 id="intro_h1">
+    
+                <span id="hello">Hello</span>, my name is <em id="name">Andy Ni</em>,<br>
+                a sophomore pursuing<br>
+                <span id="major">Electrical and Computer Engineering</span> at the<br>
+                <span id="university">University of Texas at Austin</span>.
+            
+            </h1>
+    
+        </div>
         
-        </h1>
+        <hr>
+        
+        <div id="main_content">
 
-    </div>
+            <div id="about_me" class="main_section">
 
-    <hr>
-
-    <div id="jumps">
-        <ol>
-            <li><a href="#about_me">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact_me">Contact Me</a></li>
-        </ol>
-    </div>
-
-    <hr>
-
-    <div id="about_me">
-        <h1>About Me</h1>
-        <p>
-            Hello there, I am Andy Ni, a sophomore Electrical and Computer Engineering Major at the University of Texas at Austin.
-            Since senior year of high school, I have been actively pursuing my passion in programming, and have been dedicated to
-            both learning and creating a variety of projects.
-        </p>
-    </div>
-
-    <div id="projects">
-        <h1>Notable Projects:</h1>
-        <ol>
-            <li>
-                <h3>Base Converter (android app)</h3>
-                <p>A simple calculator that converts between decimal, binary, and hexadecimal.</p>
-                Skills Used:
-                <ul>
-                    <li>Java</li>
-                    <li>Android Studio</li>
-                    <li>App Design</li>
-                </ul>
+                <h1>About Me</h1>
                 <p>
-                    <a href="https://github.com/KiboNaku/BaseConverter">Github page</a>
-                    <br>
-                    <a href="https://play.google.com/store/apps/details?id=com.nakukibo.baseconverter">Google Play</a>
+                    Hello there, I am Andy Ni, a sophomore Electrical and Computer Engineering Major at the University of Texas at Austin.
+                    Since senior year of high school, I have been actively pursuing my passion in programming, and have been dedicated to
+                    both learning and creating a variety of projects.
                 </p>
-            </li>
-
-            <li>
-                <h3>Robot Car (general ECE)</h3>
-                <p>A small autonomous vehicle that follows a black line and between objects.</p>
-                Skills Used:
-                <ul>
-                    <li>Arduino</li>
-                    <li>Circuit Design</li>
-                    <li>Teamwork</li>
-                </ul>
                 <p>
-                    <a href="projects/robot_car.html">Learn more...</a>
+                    <a href="https://github.com/KiboNaku" id="my_github">My Github</a>
                 </p>
-            </li>
-        </ol>
-    </div>
 
-    <hr>
+            </div>
+
+            <div id="projects" class="main_section">
+
+                <h1>Notable Projects:</h1>
+                
+                <div class="project">
+
+                    <h3>Base Converter (android app)</h3>
+                    <p>A simple calculator that converts between decimal, binary, and hexadecimal.</p>
+                    Skills Used:
+                    <ul>
+                        <li>Java</li>
+                        <li>Android Studio</li>
+                        <li>App Design</li>
+                    </ul>
+                    <p>
+                        <a href="https://github.com/KiboNaku/BaseConverter">Github page</a>
+                        <br>
+                        <a href="https://play.google.com/store/apps/details?id=com.nakukibo.baseconverter">Google Play</a>
+                    </p>
+
+                </div>
+
+                <div class="project">
+
+                    <h3>Robot Car (general ECE)</h3>
+                    <p>A small autonomous vehicle that follows a black line and between objects.</p>
+                    Skills Used:
+                    <ul>
+                        <li>Arduino</li>
+                        <li>Circuit Design</li>
+                        <li>Teamwork</li>
+                    </ul>
+                    <p>
+                        <a href="projects/robot_car.html">Learn more...</a>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+        
+        <hr>
+        
+        <div id="contact_me" class="main_section">
+            <h1>Contact Me</h1>
+            <p>
+                <strong>Email:</strong>
+                andy.ni@utexas.edu<br>
+                <strong>Phone:</strong>
+                (817) 542-7378
+            </p>
+        </div>
+                
+    </div>
     
-    <div id="contact_me">
-        <h1>Contact Me</h1>
-        <p>
-            <strong>Email:</strong> <br>
-            andy.ni@utexas.edu
-        </p>
-    </div>
 
 </body>
 
