@@ -3,7 +3,7 @@ body{
     width: 100%;
 }
 
-#jump_sidebar{
+div#jump_sidebar{
     min-width: 100px;
     width: 13%;
     height: 100vh;
@@ -15,23 +15,23 @@ body{
     background-color: #011E1A;
 }
 
-.jump{
+#jump_sidebar a.jump{
     text-decoration: none;
 }
 
-.jump div{
+#jump_sidebar a.jump div{
     padding: 20%;
 
     font-size: 200%;
     color:#C4DFE6;
 }
 
-.jump:hover div{
+#jump_sidebar a.jump:hover div{
     background-color:#C4DFE6;
     color: #002d2b;
 }
 
-#main_body{
+div#main_body{
     width: 70%;
     vertical-align: middle;
     
@@ -39,7 +39,7 @@ body{
     padding-left: 11%
 }
 
-#intro{
+#main_body div#intro{
     height: 100vh;
     padding-top: 25%;
 
@@ -47,28 +47,29 @@ body{
     text-align: center;
 }
 
-#intro_h1{
+#intro h1#intro_h1{
     color: #78b7b4;
 }
 
-#hello{
+#intro_h1 span#hello{
+    font-size: 190%;
     color: red;
-    font-size: 190%
 } 
 
-#name{
+#intro_h1 span#name{
     font-size: 270%;
+    font-style: italic;
     color:#C4DFE6;
 }
 
-#major{
-    color: #C4DFE6;
+#intro_h1 span#major{
     font-size: 110%;
+    color: #C4DFE6;
 }
 
-#university{
+#intro_h1 span#university{
+    font-size: 110%;
     color: #db6d06;
-    font-size: 110%
 }
 
 #main_content{
@@ -90,18 +91,24 @@ a#my_github{
     color: #C4DFE6;
 } 
 
+#projects > div{
+    margin: 7% 5%;
+}
+
 .project{
     width: 60%;
 
     margin: 3%;
     padding: 5%;
 
-    border: 4px solid #78b7b4;
-    box-shadow:
+    border: 10px double #78b7b4;
+    /* box-shadow:
         inset 0 0 0 4px #002d2b,
-        inset 0 0 0 8px #C4DFE6;
+        inset 0 0 0 8px #C4DFE6; */
+    border-radius: 13%;
 }
 
-#contact_me strong {
+#contact_me  span.contact_name{
+    font-size: 120%;
     color: #C4DFE6; 
 }

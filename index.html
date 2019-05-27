@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" type="text/css" href="all.css">
     <link rel="stylesheet" type="text/css" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,400i&display=swap" rel="stylesheet">
 
 </head>
 
@@ -29,11 +30,11 @@
     
     <div id="main_body">
 
-        <div id="intro">
+        <div id="intro" class="main_div">
 
             <h1 id="intro_h1">
     
-                <span id="hello">Hello</span>, my name is <em id="name">Andy Ni</em>,<br>
+                <span id="hello">Hello</span>, my name is <span id="name">Andy Ni</span>,<br>
                 a sophomore pursuing<br>
                 <span id="major">Electrical and Computer Engineering</span> at the<br>
                 <span id="university">University of Texas at Austin</span>.
@@ -42,20 +43,25 @@
     
         </div>
         
-        <hr>
-        
-        <div id="main_content">
+        <div id="main_content" class="main_div">
 
             <div id="about_me" class="main_section">
 
                 <h1>About Me</h1>
                 <p>
-                    Hello there, I am Andy Ni, a sophomore Electrical and Computer Engineering Major at the University of Texas at Austin.
-                    Since senior year of high school, I have been actively pursuing my passion in programming, and have been dedicated to
-                    both learning and creating a variety of projects.
+                    Hello there, I am Andy Ni, a sophomore Electrical and Computer Engineering major at the University of Texas at Austin,
+                    with the intent of pursuing the Software Engineering track.
+                    Since senior year of high school, I have been actively quenching my passion in programming, 
+                    and have been dedicated to both learning and creating a variety of projects.
+                    <br><br>
+                    My interest in programming began when I was introduced to Javascript in AP Computer Science Principles,
+                    and since then, I have been relentlessly researching and dedicating my freetime to discovering the different
+                    possibilities in the world of CS.
+                    <br><br>
+                    I have came a long way since then, and I am excited to share my projects below.
                 </p>
                 <p>
-                    <a href="https://github.com/KiboNaku" id="my_github">My Github</a>
+                    <a href="https://github.com/KiboNaku" id="my_github">My Github Profile</a>
                 </p>
 
             </div>
@@ -63,57 +69,114 @@
             <div id="projects" class="main_section">
 
                 <h1>Notable Projects:</h1>
-                
-                <div class="project">
 
-                    <h3>Base Converter (android app)</h3>
-                    <p>A simple calculator that converts between decimal, binary, and hexadecimal.</p>
-                    Skills Used:
-                    <ul>
-                        <li>Java</li>
-                        <li>Android Studio</li>
-                        <li>App Design</li>
-                    </ul>
-                    <p>
-                        <a href="https://github.com/KiboNaku/BaseConverter">Github page</a>
-                        <br>
-                        <a href="https://play.google.com/store/apps/details?id=com.nakukibo.baseconverter">Google Play</a>
-                    </p>
+                <div id="published_projects" class="project_section">
+
+                    <h2>Published</h2>
+
+                    <div class="project">
+
+                        <h3>Base Converter (android app)</h3>
+                        <p class="date">Apr 05, 2019</p>
+                        <p>
+                            A simple calculator that converts between decimal, binary, and hexadecimal.
+                        </p>
+                        Skills Used:
+                        <ul>
+                            <li>Java</li>
+                            <li>Android Studio</li>
+                            <li>App Design</li>
+                        </ul>
+
+                        <p>
+                            <a href="https://github.com/KiboNaku/BaseConverter">Github page</a>
+                            <br>
+                            <a href="https://play.google.com/store/apps/details?id=com.nakukibo.baseconverter">Google Play</a>
+                        </p>
+    
+                    </div>
+    
+                    <div class="project">
+    
+                        <h3>Robot Car (general ECE)</h3>
+                        <p class="date">May 10, 2019</p>
+                        <p>
+                            A small autonomous vehicle that follows a black line and between objects.
+                        </p>
+                        Skills Used:
+                        <ul>
+                            <li>Arduino</li>
+                            <li>Circuit Design</li>
+                            <li>Teamwork</li>
+                        </ul>
+
+                        <p>
+                            <a href="projects/robot_car.html">Learn more...</a>
+                        </p>
+    
+                    </div>
+    
+                    <div class="project">
+    
+                        <h3>This Portfolio Site</h3>
+                        <p class="date">May 24, 2019</p>
+                        <p>
+                            This portfolio site was coded from scratch to share my projects.
+                        </p>
+                        Skills Used:
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Google Fonts</li>
+                        </ul>
+
+                        <p>
+                            <a href="https://github.com/KiboNaku/KiboNaku.github.io">Github page</a>
+                        </p>
+                    </div>
+
+                </div>
+                    
+                <div id="indev_projects" class="project_section">
+
+                    <h2>In Development</h2>
+
+                    <div class="project">
+
+                        <h3>To Do List (android)</h3>
+                        <p>
+                            This easy to use android app allows the user to specify their type of to do list
+                            and lets them choose between the list being a shopping list, a workout list,
+                            or a general to do list.
+                        </p>
+                        Skills Used:
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Google Fonts</li>
+                        </ul>
+                            
+                    </div>
 
                 </div>
 
-                <div class="project">
-
-                    <h3>Robot Car (general ECE)</h3>
-                    <p>A small autonomous vehicle that follows a black line and between objects.</p>
-                    Skills Used:
-                    <ul>
-                        <li>Arduino</li>
-                        <li>Circuit Design</li>
-                        <li>Teamwork</li>
-                    </ul>
-                    <p>
-                        <a href="projects/robot_car.html">Learn more...</a>
-                    </p>
-
-                </div>
             </div>
+
         </div>
         
-        <hr>
-        
         <div id="contact_me" class="main_section">
+
             <h1>Contact Me</h1>
             <p>
-                <strong>Email:</strong>
+                <span class="contact_name">Email: </span>
                 andy.ni@utexas.edu<br>
-                <strong>Phone:</strong>
+                <span class="contact_name">Phone: </span>
                 (817) 542-7378
             </p>
+
         </div>
                 
     </div>
-    
 
 </body>
 
