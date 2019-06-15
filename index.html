@@ -6,13 +6,15 @@
 
     <title>Andy Ni</title>
 
-    <link rel="stylesheet" type="text/css" href="all.css">
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="styles/all.css">
+    <link rel="stylesheet" type="text/css" href="styles/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,400i&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
+
 
     <div id="jump_sidebar">
 
@@ -68,97 +70,84 @@
 
             <div id="projects" class="main_section">
 
-                <h1>Notable Projects:</h1>
+                <h1 id="projects_heading">Noteable Projects</h1>
 
-                <div id="published_projects" class="project_section">
+				<div class="project">
+					<h3>Website Updater</h3>
+					<p class="type">Type: JavaFX Application</p>
+					<p class="date">2019-06-15</p>
+					<p>A personal application made to modify the HTML of the portfolio site without having to modify the HTML itself.</p>
 
-                    <h2>Published</h2>
+					Skills Used:
+					<ul>
+						<li>Java</li>
+						<li>App Design</li>
+						<li>HTML</li>
 
-                    <div class="project">
+					</ul>
+					<p>
+						<a href="https://github.com/KiboNaku/WebsiteUpdater">Github Page</a><br>
+					</p>
+				</div>
 
-                        <h3>Base Converter (android app)</h3>
-                        <p class="date">Apr 05, 2019</p>
-                        <p>
-                            A simple calculator that converts between decimal, binary, and hexadecimal.
-                        </p>
-                        Skills Used:
-                        <ul>
-                            <li>Java</li>
-                            <li>Android Studio</li>
-                            <li>App Design</li>
-                        </ul>
 
-                        <p>
-                            <a href="https://github.com/KiboNaku/BaseConverter">Github page</a>
-                            <br>
-                            <a href="https://play.google.com/store/apps/details?id=com.nakukibo.baseconverter">Google Play</a>
-                        </p>
-    
-                    </div>
-    
-                    <div class="project">
-    
-                        <h3>Robot Car (general ECE)</h3>
-                        <p class="date">May 10, 2019</p>
-                        <p>
-                            A small autonomous vehicle that follows a black line and between objects.
-                        </p>
-                        Skills Used:
-                        <ul>
-                            <li>Arduino</li>
-                            <li>Circuit Design</li>
-                            <li>Teamwork</li>
-                        </ul>
+				<div class="project">
+					<h3>Portfolio Site</h3>
+					<p class="type">Type: Webpage</p>
+					<p class="date">2019-05-24</p>
+					<p>This portfolio site was coded from scratch to share my projects.</p>
 
-                        <p>
-                            <a href="projects/robot_car.html">Learn more...</a>
-                        </p>
-    
-                    </div>
-    
-                    <div class="project">
-    
-                        <h3>This Portfolio Site</h3>
-                        <p class="date">May 24, 2019</p>
-                        <p>
-                            This portfolio site was coded from scratch to share my projects.
-                        </p>
-                        Skills Used:
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>Google Fonts</li>
-                        </ul>
+					Skills Used:
+					<ul>
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>Javascript</li>
 
-                        <p>
-                            <a href="https://github.com/KiboNaku/KiboNaku.github.io">Github page</a>
-                        </p>
-                    </div>
+					</ul>
+					<p>
+						<a href="https://github.com/KiboNaku/KiboNaku.github.io">Github Page</a><br>
+					</p>
+				</div>
 
-                </div>
-                    
-                <div id="indev_projects" class="project_section">
 
-                    <h2>In Development</h2>
+				<div class="project">
+					<h3>Robot Car</h3>
+					<p class="type">Type: General ECE</p>
+					<p class="date">2019-05-10</p>
+					<p>A small autonomous vehicle that follows a black line and between objects.</p>
 
-                    <div class="project">
+					Skills Used:
+					<ul>
+						<li>Arduino</li>
+						<li>Circuit Design</li>
+						<li>Teamwork</li>
 
-                        <h3>To Do List (android)</h3>
-                        <p>
-                            This easy to use android app allows the user to specify their type of to do list
-                            and lets them choose between the list being a shopping list, a workout list,
-                            or a general to do list.
-                        </p>
-                        Skills Used:
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>Google Fonts</li>
-                        </ul>
-                            
-                    </div>
+					</ul>
+					<p>
+						<a href="robot_car.html">Learn More...</a><br>
+					</p>
+				</div>
 
-                </div>
+
+				<div class="project">
+					<h3>Base Converter</h3>
+					<p class="type">Type: Android App</p>
+					<p class="date">2019-04-05</p>
+					<p>A simple calculator that converts between decimal, binary, and hexadecimal.</p>
+
+					Skills Used:
+					<ul>
+						<li>Java</li>
+						<li>Android Studio</li>
+						<li>App Design</li>
+
+					</ul>
+					<p>
+						<a href="https://github.com/KiboNaku/BaseConverter">Github Page</a><br>
+						<a href="https://play.google.com/store/apps/details?id=com.nakukibo.baseconverter">Google Play</a><br>
+					</p>
+				</div>
+
 
             </div>
 
@@ -167,16 +156,22 @@
         <div id="contact_me" class="main_section">
 
             <h1>Contact Me</h1>
-            <p>
-                <span class="contact_name">Email: </span>
-                andy.ni@utexas.edu<br>
-                <span class="contact_name">Phone: </span>
-                (817) 542-7378
+
+            <p id="contact_email">
+                <span class="contact_heading">Email: </span>
+                <span id="email_value">andy.ni@utexas.edu</span>
+            </p>
+
+            <p id="contact_phone">
+                <span class="contact_heading">Phone: </span>
+                <span id="phone_value">(817) 542-7378</span>
             </p>
 
         </div>
                 
     </div>
+
+    <script type="text/javascript" src="scripts/index.js"></script>
 
 </body>
 
