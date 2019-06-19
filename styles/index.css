@@ -114,12 +114,12 @@ a#my_github p:hover, .contact:hover p{
 
 
 #contact_me  span.contact_name{
-    font-size: 120%;
+    font-size: 140%;
     color: #C4DFE6; 
 }
 
 .contact p {
-    font-size: 90%;
+    font-size: 130%;
     font-weight: normal;
 }
 
@@ -152,7 +152,7 @@ a#my_github p:hover, .contact:hover p{
     }
     
     a#my_github p, .contact p {
-        width: 30vw;
-        font-size: 100%;
+        width: 35vw;
+        font-size: 120%;
     }
 }
