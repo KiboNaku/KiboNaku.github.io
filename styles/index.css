@@ -11,7 +11,7 @@ body {
 
 #intro{
     height: 70vh;
-    padding-top: 32vh;
+    padding-top: 24vh;
     font-size: 90%;
     text-align: center;
 }
@@ -124,8 +124,10 @@ a#my_github p:hover, .contact:hover p{
 }
 
 .contact p {
-    font-size: 110%;
+    font-size: 120%;
     font-weight: normal;
+    width: 75%;
+    margin: 5% auto;
 }
 
 .contact_heading {
@@ -134,29 +136,8 @@ a#my_github p:hover, .contact:hover p{
 
 @media only screen and (max-width: 1100px) and (orientation:landscape){
     #intro{
-        padding-top: 27vh; 
-    }
-}
-
-@media only screen and (max-width: 700px) and (orientation:portrait){
-    #intro{
-        padding-top: 30vh; 
-    }
-
-    #intro_h1 span#hello{
-        font-size: 150%;
-    } 
-
-    #intro_h1 span#name{
-        font-size: 200%;
-    }
-
-}
-
-@media only screen and (max-width: 768px) {
-    #intro{
-        padding-top: 25vh; 
-        font-size: 80%;
+        padding-top: 19vh;
+        font-size: 85%; 
     }
 
     #intro_h1 span#hello{
@@ -164,13 +145,58 @@ a#my_github p:hover, .contact:hover p{
     } 
 
     #intro_h1 span#name{
-        font-size: 210%;
+        font-size: 220%;
     }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 800px) {
     #intro{
-        padding-top: 25vh; 
+        padding-top: 14vh; 
+        font-size: 72%;
+    }
+
+    #intro_h1 span#hello{
+        font-size: 170%;
+    } 
+
+    #intro_h1 span#name{
+        font-size: 200%;
+    }
+
+    #intro_h1 span#major{
+        font-size: 100%;
+    }
+
+    #intro_h1 span#university{
+        font-size: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #intro{
+        font-size: 67%;
+    }
+
+    #intro_h1 span#hello{
+        font-size: 150%;
+    } 
+
+    #intro_h1 span#name{
+        font-size: 190%;
+    }
+
+    #intro_h1 span#major{
+        font-size: 90%;
+    }
+
+    #intro_h1 span#university{
+        font-size: 90%;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    #intro{
+        padding-top: 12vh; 
         font-size: 60%;
     }
 
@@ -191,3 +217,17 @@ a#my_github p:hover, .contact:hover p{
     }
 }
 
+@media only screen and (max-width: 1000px) and (orientation:portrait){
+    #intro{
+        padding-top: 31vh; 
+    }
+
+    #intro_h1 span#hello{
+        font-size: 150%;
+    } 
+
+    #intro_h1 span#name{
+        font-size: 200%;
+    }
+
+}

@@ -19,7 +19,8 @@
 }
 
 #jump_sidebar a.jump div{
-    padding: 5vh 20%;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
 
     font-size: 150%;
     color:#C4DFE6;
