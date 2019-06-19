@@ -6,7 +6,7 @@
     height: 100vh;
     position: fixed;
 
-    padding-top: 20vh;
+    padding-top: 15vh;
 
     text-align: center;
     background-color: black;
@@ -53,7 +53,7 @@
 
 @media only screen and (max-width: 800px) and (orientation:landscape){
     #jump_sidebar {
-        padding-top: 5vh;
+        padding-top: 10vh;
     }
 
     #jump_sidebar a.jump div {
