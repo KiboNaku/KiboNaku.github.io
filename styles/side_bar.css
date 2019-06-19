@@ -32,13 +32,18 @@
     color: #002d2b;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
     #jump_sidebar {
-        width: 20vw;
+        padding-top: 20vh;
     }
-
     #jump_sidebar a.jump div {
-        font-size: 4vw;
+        font-size: 130%;
+    }
+}
+
+@media only screen and (max-width: 1000px) and (orientation:landscape){
+    #jump_sidebar {
+        padding-top: 15vh;
     }
 }
 
@@ -48,8 +53,12 @@
     }
 }
 
-@media only screen and (max-height: 800px) and (orientation:landscape){
+@media only screen and (max-width: 800px) and (orientation:landscape){
     #jump_sidebar {
-        padding-top: 15vh;
+        padding-top: 10vh;
+    }
+
+    #jump_sidebar a.jump div {
+        font-size: 110%;
     }
 }

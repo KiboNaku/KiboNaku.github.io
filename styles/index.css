@@ -12,7 +12,7 @@ body {
 
 #main_body div#intro{
     height: 100vh;
-    padding-top: 28vh;
+    padding-top: 32vh;
     font-size: 90%;
     text-align: center;
 }
@@ -127,7 +127,7 @@ a#my_github p:hover, .contact:hover p{
     font-weight: bold;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
     
     #main_body div#intro{
         padding-left: 10%;
@@ -157,8 +157,9 @@ a#my_github p:hover, .contact:hover p{
     }
 }
 
-@media only screen and (max-height: 800px) and (orientation:landscape){
+@media only screen and (max-width: 1000px) and (orientation:landscape){
     #main_body div#intro{
-        padding-top: 20vh;
+        padding-top: 22vh;
     }
 }
+
