@@ -59,3 +59,21 @@
         font-size: 50%;
     }
 }
+
+@media only screen and (max-width: 1000px) and (orientation:portrait){
+    #jump_sidebar a.jump div {
+        font-size: 125%;
+    }
+}
+
+@media only screen and (max-width: 700px) and (orientation:portrait){
+    #jump_sidebar a.jump div {
+        font-size: 115%;
+    }
+}
+
+@media only screen and (max-width: 490px) and (orientation:portrait){
+    #jump_sidebar a.jump div {
+        font-size: 110%;
+    }
+}
