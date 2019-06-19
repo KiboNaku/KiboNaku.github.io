@@ -23,8 +23,6 @@
 
     font-size: 200%;
     color:#C4DFE6;
-
-
 }
 
 #jump_sidebar a.jump:hover div{
@@ -59,6 +57,7 @@
     }
 
     #jump_sidebar a.jump div {
-        font-size: 110%;
+        font-size: 100%;
+        padding: 10%;
     }
 }
