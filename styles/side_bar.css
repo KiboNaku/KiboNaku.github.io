@@ -22,7 +22,7 @@
 #jump_sidebar a.jump div{
     padding: 5vh 20%;
 
-    font-size: 200%;
+    font-size: 150%;
     color:#C4DFE6;
 }
 
@@ -84,6 +84,7 @@
     }
 
     #jump_sidebar a.jump div {
-        font-size: 110%;
+        font-size: 100%;
+        padding: 10%;
     }
 } */
