@@ -35,7 +35,7 @@ $(window).on("load",function() {
         if(opacity < 0) opacity = 0;
         else if(opacity > 1) opacity = 1;
 
-        // $(this).css("opacity", opacity);
+        $(this).css("opacity", opacity);
     });
 
     $("#intro, #about_me").each(function(){
