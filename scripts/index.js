@@ -12,25 +12,23 @@ window.onresize = function(event) {
 $(window).on("load",function() {
     $(window).scroll(function() {
 
-      var windowMiddle = $(window).scrollTop() + Math.floor(window.innerHeight/2);
-      
-      $(".fadeable, .project").each(function() {
-        
+        var windowMiddle = $(window).scrollTop() + Math.floor(window.innerHeight/2);
+
+        $(".fadeable, .project").each(function() {
+
         var objectHalf = $(this).outerHeight()/2;
 
         var objectMiddle = $(this).offset().top + objectHalf;
         var objectTop = objectMiddle - objectHalf/2;
-
         var objectBottom = objectMiddle + objectHalf * (this.id == "intro"? .2 : 1.3);
-        
+
         var deduction = 0;
-        
+
         if(windowMiddle < objectTop){
             deduction = (objectTop - windowMiddle)/(objectHalf/1.5);
         }else if(windowMiddle > objectBottom){
             deduction = (windowMiddle - objectBottom)/(objectHalf/1.5);
         }
-
 
         var opacity = 1 - deduction;
 
@@ -38,21 +36,24 @@ $(window).on("load",function() {
         else if(opacity > 1) opacity = 1;
 
         $(this).css("opacity", opacity);
+    });
 
+    $("#intro, #about_me").each(function(){
         var jumpOpacity = 0;
+        var introBottom = $("#intro").offset().top + $("#intro").outerHeight();
 
-        if($(window).scrollTop() > $("#intro").offset().top + $("#intro").outerHeight()){
-            var offset =  ($("#about_me").offset().top - ($("#intro").offset().top + $("#intro").outerHeight()))*2/3;
-            jumpOpacity = ($(window).scrollTop() - ($("#intro").offset().top + $("#intro").outerHeight()))/offset;
-            $("#jump_sidebar").css("display", "block");
+        if(windowMiddle > introBottom){
+            var offset =  ($("#about_me").offset().top - introBottom);
+            jumpOpacity = (windowMiddle - introBottom)/offset;
+            $("#jump_sidebar").css("pointer-events", "all");
         }else {
-            $("#jump_sidebar").css("display", "none");
+            $("#jump_sidebar").css("pointer-events", "none");
         }
-        
+
         if(jumpOpacity > 1) jumpOpacity = 1;
 
         $("#jump_sidebar").css("opacity", jumpOpacity);
-      });
+    });
     }).scroll();
   });
 

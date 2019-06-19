@@ -83,7 +83,7 @@ a#my_github p:hover, .contact:hover p{
 } 
 
 #about_me {
-    margin-top: 20%;
+    margin-top: 30vh;
 }
 
 #projects_heading {
@@ -103,7 +103,7 @@ a#my_github p:hover, .contact:hover p{
 .project:hover {
     border-width: 7px;
     border-color: #95F1E8;
-    padding: 12% 8%;
+    padding: 12%    8%;
 }
 
 .project > p.type, .project > p.date {
