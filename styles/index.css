@@ -14,6 +14,7 @@ body {
     padding-top: 32vh;
     font-size: 90%;
     text-align: center;
+    border: 5px solid red; 
 }
 
 #intro h1#intro_h1{
@@ -43,6 +44,7 @@ body {
 }
 
 #main_content{
+    border: 5px solid peru; 
     margin: 10% 0; 
 }
 
@@ -83,6 +85,7 @@ a#my_github p:hover, .contact:hover p{
 } 
 
 #about_me {
+    border: 5px solid green; 
     margin-top: 30vh;
 }
 
