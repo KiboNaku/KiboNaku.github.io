@@ -19,36 +19,36 @@
 
     <div id="jump_sidebar">
 
-            <a href="#about_me" class="jump">
-                <div>About Me</div>
-            </a>
-            <a href="#projects" class="jump">
-                <div>Projects</div>
-            </a>
-            <a href="#contact_me" class="jump">
-                <div>Contact Me</div>
-            </a>
-    
-        </div>
+        <a href="#about_me" class="jump">
+            <div>About Me</div>
+        </a>
+        <a href="#projects" class="jump">
+            <div>Projects</div>
+        </a>
+        <a href="#contact_me" class="jump">
+            <div>Contact Me</div>
+        </a>
+
+    </div>
+
+    <div id="intro" class="main_section fadeable">
+
+        <h1 id="intro_h1">
+
+            <span id="hello">Hello</span>, my name is <span id="name">Andy Ni</span>,<br>
+            a sophomore pursuing<br>
+            <span id="major">Electrical and Computer Engineering</span> at the<br>
+            <span id="university">University of Texas at Austin</span>.
+        
+        </h1>
+
+    </div>
 
     <div id="main_body">
-
-        <div id="intro" class="main_div">
-
-            <h1 id="intro_h1">
-    
-                <span id="hello">Hello</span>, my name is <span id="name">Andy Ni</span>,<br>
-                a sophomore pursuing<br>
-                <span id="major">Electrical and Computer Engineering</span> at the<br>
-                <span id="university">University of Texas at Austin</span>.
-            
-            </h1>
-    
-        </div>
         
         <div id="main_content" class="main_div">
 
-            <div id="about_me" class="main_section">
+            <div id="about_me" class="main_section fadeable">
 
                 <h1>About Me</h1>
                 <p>
@@ -69,9 +69,11 @@
             </div>
 
             <div id="projects" class="main_section">
-
-                <h1 id="projects_heading">Noteable Projects</h1>
-
+                
+                <div id="projects_heading" class="fadeable">
+                    <h1>Noteable Projects</h1>
+                </div>
+                
 				<div class="project">
 					<h3>Website Updater</h3>
 					<p class="type">Type: JavaFX Application</p>
@@ -153,14 +155,14 @@
 
         </div>
         
-        <div id="contact_me" class="main_section">
+        <div id="contact_me" class="main_section fadeable">
 
             <h1>Contact Me</h1>
 
             <a href="mailto:andy.ni@utexas.edu" id="contact_email" class="contact">
                 <p>
                 
-                    <span class="contact_heading">Email Me</span><br>
+                    <span class="contact_heading">Email</span><br>
                     <span id="email_value">andy.ni@utexas.edu</span>
                 
                 </p>
@@ -169,7 +171,7 @@
             <a href="tel:1-817-542-7378" id="contact_phone" class="contact">
                 <p>
                 
-                    <span class="contact_heading">Call Me</span><br>
+                    <span class="contact_heading">Phone</span><br>
                     <span id="phone_value">1-817-542-7378</span>
                 
                 </p>
@@ -181,6 +183,7 @@
     </div>
 
     <script type="text/javascript" src="scripts/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 </body>
 

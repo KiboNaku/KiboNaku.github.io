@@ -9,9 +9,8 @@ body {
     float: right;
 }
 
-
-#main_body div#intro{
-    height: 100vh;
+#intro{
+    height: 70vh;
     padding-top: 32vh;
     font-size: 90%;
     text-align: center;
@@ -44,13 +43,12 @@ body {
 }
 
 #main_content{
-    margin-top: 10%;
-    margin-bottom: 10%; 
+    margin: 10% 0; 
 }
 
 .main_section{
-    min-height: 100vh;
-    padding: 15%;
+    min-height: 70vh;
+    padding: 10%;
 }
 
 .main_section > p{
@@ -84,12 +82,19 @@ a#my_github p:hover, .contact:hover p{
     border: 2px solid #78b7b4;
 } 
 
+#about_me {
+    margin-top: 20%;
+}
+
+#projects_heading {
+    padding: 10% 0%;
+}
+
 .project{
     width: 70%;
     vertical-align: center;
-    margin: 20% auto 30% auto;
-    padding: 10%;
-    padding: 5%;
+    margin: 0% auto 15% auto;
+    padding: 10% 5%;
 
     border: 5px solid #78b7b4; 
     border-radius: 13%;
@@ -98,7 +103,7 @@ a#my_github p:hover, .contact:hover p{
 .project:hover {
     border-width: 7px;
     border-color: #95F1E8;
-    padding: 8%;
+    padding: 12% 8%;
 }
 
 .project > p.type, .project > p.date {
@@ -114,12 +119,12 @@ a#my_github p:hover, .contact:hover p{
 
 
 #contact_me  span.contact_name{
-    font-size: 140%;
+    font-size: 120%;
     color: #C4DFE6; 
 }
 
 .contact p {
-    font-size: 130%;
+    font-size: 110%;
     font-weight: normal;
 }
 
@@ -127,7 +132,7 @@ a#my_github p:hover, .contact:hover p{
     font-weight: bold;
 }
 
-@media only screen and (max-width: 1000px) {
+/* @media only screen and (max-width: 1000px) {
     
     #main_body div#intro{
         padding-left: 10%;
@@ -161,5 +166,5 @@ a#my_github p:hover, .contact:hover p{
     #main_body div#intro{
         padding-top: 22vh;
     }
-}
+} */
 
