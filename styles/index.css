@@ -156,3 +156,9 @@ a#my_github p:hover, .contact:hover p{
         font-size: 120%;
     }
 }
+
+@media only screen and (max-height: 800px) and (orientation:landscape){
+    #main_body div#intro{
+        padding-top: 20vh;
+    }
+}
