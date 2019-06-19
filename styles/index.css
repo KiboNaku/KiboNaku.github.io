@@ -1,48 +1,18 @@
 
-body{
+body {
     width: 100%;
 }
 
-div#jump_sidebar{
-    min-width: 100px;
-    width: 13%;
-    height: 100vh;
-    position: fixed;
-
-    padding-top: 5%;
-
-    text-align: center;
-    background-color: #011E1A;
-}
-
-#jump_sidebar a.jump{
-    text-decoration: none;
-}
-
-#jump_sidebar a.jump div{
-    padding: 20%;
-
-    font-size: 200%;
-    color:#C4DFE6;
-}
-
-#jump_sidebar a.jump:hover div{
-    background-color:#C4DFE6;
-    color: #002d2b;
-}
-
-div#main_body{
-    width: 70%;
+#main_body{
     vertical-align: middle;
-    
     margin: auto;
-    padding-left: 11%
+    float: right;
 }
+
 
 #main_body div#intro{
     height: 100vh;
-    padding-top: 25%;
-
+    padding-top: 28vh;
     font-size: 90%;
     text-align: center;
 }
@@ -79,7 +49,8 @@ div#main_body{
 }
 
 .main_section{
-    padding: 10%;
+    min-height: 100vh;
+    padding: 15%;
 }
 
 .main_section > p{
@@ -87,26 +58,47 @@ div#main_body{
     margin: 5%;
 }
 
-a#my_github{
-    font-size: 105%;
-    color: #C4DFE6;
+a#my_github, .contact {
+    color: white;
+    text-decoration: none;  
 } 
 
-#projects > div{
-    margin: 7% 5%;
+a#my_github p, .contact p {
+    width: 50%;
+
+    vertical-align: middle;
+    margin: auto;
+    margin-top: 10%;
+    padding: 2%;
+
+    text-align: center;
+    
+    font-size: 120%;
+    font-weight: bold;
+    
+    background-color: #78b7b4;
 }
 
-.project{
-    width: 60%;
+a#my_github p:hover, .contact:hover p{
+    background-color: #002d2b;
+    border: 2px solid #78b7b4;
+} 
 
-    margin: 3%;
+.project{
+    width: 70%;
+    vertical-align: center;
+    margin: 20% auto 30% auto;
+    padding: 10%;
     padding: 5%;
 
-    border: 10px double #95F1E8;
-    /* box-shadow:
-        inset 0 0 0 4px #002d2b,
-        inset 0 0 0 8px #C4DFE6; */
+    border: 5px solid #78b7b4; 
     border-radius: 13%;
+}
+
+.project:hover {
+    border-width: 7px;
+    border-color: #95F1E8;
+    padding: 8%;
 }
 
 .project > p.type, .project > p.date {
@@ -116,7 +108,51 @@ a#my_github{
     margin: 2px;
 }
 
+#contact_me {
+    min-height: 50vh;
+}
+
+
 #contact_me  span.contact_name{
     font-size: 120%;
     color: #C4DFE6; 
+}
+
+.contact p {
+    font-size: 90%;
+    font-weight: normal;
+}
+
+.contact_heading {
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 800px) {
+    
+    #main_body div#intro{
+        padding-left: 10%;
+        padding-right: 10%;
+        font-size: 70%;
+    }
+
+    #intro_h1 span#hello{
+        font-size: 150%;
+    } 
+
+    #intro_h1 span#name{
+        font-size: 180%;
+    }
+
+    #intro_h1 span#major{
+        font-size: 150%;
+    }
+
+    #intro_h1 span#university{
+        font-size: 150%;
+    }
+    
+    a#my_github p, .contact p {
+        width: 30vw;
+        font-size: 100%;
+    }
 }

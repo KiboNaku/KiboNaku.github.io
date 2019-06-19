@@ -1,29 +1,44 @@
 
-body{
+::-webkit-scrollbar {
+    width: 7px;
+}
+::-webkit-scrollbar-track {
+    background: #002d2b; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #95F1E8; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #C4DFE6; 
+}
+
+body {
     font-family: 'EB Garamond', serif;
-    
-    padding-bottom: 100px;
+    color:#78b7b4;
+    background-color: #002d2b;
 
     width: 70%;
     vertical-align: middle;
     margin: auto;
+    padding-bottom: 20vh;
 
-    color:#78b7b4;
-    background-color: #002d2b;
+    
 }
 
-h1, h2, h3, h4, h5, h6{
-    color:#C4DFE6;
+h1, h2, h3, h4, h5, h6 {
+    color:#C4DFE6; 
 }
 
-a{
+a {
     color: #95F1E8;
 }
 
-a:visited{
+a:visited {
     color:#78b7b4;
 }
 
-a:hover{
+a:hover {
     color: white;
 }

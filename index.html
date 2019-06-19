@@ -7,7 +7,9 @@
     <title>Andy Ni</title>
 
     <link rel="stylesheet" type="text/css" href="styles/all.css">
+    <link rel="stylesheet" type="text/css" href="styles/side_bar.css">
     <link rel="stylesheet" type="text/css" href="styles/index.css">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,400i&display=swap" rel="stylesheet">
 
@@ -15,21 +17,20 @@
 
 <body>
 
-
     <div id="jump_sidebar">
 
-        <a href="#about_me" class="jump">
-            <div>About Me</div>
-        </a>
-        <a href="#projects" class="jump">
-            <div>Projects</div>
-        </a>
-        <a href="#contact_me" class="jump">
-            <div>Contact Me</div>
-        </a>
-
-    </div>
+            <a href="#about_me" class="jump">
+                <div>About Me</div>
+            </a>
+            <a href="#projects" class="jump">
+                <div>Projects</div>
+            </a>
+            <a href="#contact_me" class="jump">
+                <div>Contact Me</div>
+            </a>
     
+        </div>
+
     <div id="main_body">
 
         <div id="intro" class="main_div">
@@ -62,10 +63,9 @@
                     <br><br>
                     I have came a long way since then, and I am excited to share my projects below.
                 </p>
-                <p>
-                    <a href="https://github.com/KiboNaku" id="my_github">My Github Profile</a>
-                </p>
-
+                <a href="https://github.com/KiboNaku" id="my_github">
+                    <p>My Github Profile</p>
+                </a>
             </div>
 
             <div id="projects" class="main_section">
@@ -86,7 +86,7 @@
 
 					</ul>
 					<p>
-						<a href="https://github.com/KiboNaku/WebsiteUpdater">Github Page</a><br>
+						<a href="https://github.com/KiboNaku/WebsiteUpdater">Github Page</a>
 					</p>
 				</div>
 
@@ -157,15 +157,24 @@
 
             <h1>Contact Me</h1>
 
-            <p id="contact_email">
-                <span class="contact_heading">Email: </span>
-                <span id="email_value">andy.ni@utexas.edu</span>
-            </p>
+            <a href="mailto:andy.ni@utexas.edu" id="contact_email" class="contact">
+                <p>
+                
+                    <span class="contact_heading">Email Me</span><br>
+                    <span id="email_value">andy.ni@utexas.edu</span>
+                
+                </p>
+            </a>
 
-            <p id="contact_phone">
-                <span class="contact_heading">Phone: </span>
-                <span id="phone_value">(817) 542-7378</span>
-            </p>
+            <a href="tel:1-817-542-7378" id="contact_phone" class="contact">
+                <p>
+                
+                    <span class="contact_heading">Call Me</span><br>
+                    <span id="phone_value">1-817-542-7378</span>
+                
+                </p>
+            </a>
+            
 
         </div>
                 

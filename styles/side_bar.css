@@ -1,0 +1,49 @@
+
+#jump_sidebar {
+    min-width: 100px;
+    width: 15vw;
+
+    height: 100vh;
+    position: fixed;
+
+    padding-top: 20vh;
+
+    text-align: center;
+    background-color: black;
+
+    float: left;
+}
+
+#jump_sidebar a.jump {
+    text-decoration: none;
+}
+
+#jump_sidebar a.jump div{
+    padding: 20%;
+
+    font-size: 200%;
+    color:#C4DFE6;
+
+
+}
+
+#jump_sidebar a.jump:hover div{
+    background-color:#C4DFE6;
+    color: #002d2b;
+}
+
+@media only screen and (max-width: 900px) {
+    #jump_sidebar {
+        width: 20vw;
+    }
+
+    #jump_sidebar a.jump div {
+        font-size: 4vw;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #jump_sidebar {
+        padding-top: 30vh;
+    }
+}
