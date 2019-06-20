@@ -10,10 +10,18 @@ body {
 }
 
 #intro{
+    background-image: url("../images/robot_car_team_40.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
     height: 70vh;
     padding-top: 24vh;
     font-size: 90%;
     text-align: center;
+}
+
+#intro:hover {
+    background-image: url("../images/robot_car_team_45.png");
 }
 
 #intro h1#intro_h1{
@@ -94,13 +102,17 @@ a#my_github p:hover, .contact:hover p{
 
 img {
     float: left;
-    opacity: .4;
+    opacity: .55;
     width: 35%;
-    padding: 5% ;
+    padding-right: 5% ;
 }
 
 img:hover {
     opacity: .9;
+}
+
+#about_me div {
+    padding: 5%;
 }
 
 #about_me p {
