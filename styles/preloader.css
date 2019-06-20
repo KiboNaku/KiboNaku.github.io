@@ -17,7 +17,7 @@
 }
 
 #preloader.start:before {
-    animation: animateColor 4s 1 ease-in-out;
+    animation: animateColor 3s 1 ease-in-out;
     animation-delay: 1s;
 }
 
@@ -58,7 +58,7 @@
     box-sizing: border-box;
     border: 3px solid transparent;
     
-    animation: animateBorder 4s alternate infinite ease-in-out;
+    animation: animateBorder 3s alternate infinite ease-in-out;
     animation-delay: 1s;
     
     z-index: 10000;
