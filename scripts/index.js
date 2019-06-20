@@ -10,6 +10,7 @@ window.onresize = function(event) {
 };
 
 $(window).on("load",function() {
+
     $(window).scroll(function() {
 
         var windowMiddle = $(window).scrollTop() + Math.floor(window.innerHeight/2);

@@ -1,7 +1,26 @@
 
 body {
     width: 100%;
+    margin: 0;
+    padding: 0;
 }
+
+#contents.hidden {
+    visibility: hidden;
+    position: fixed;
+    pointer-events: none;
+}
+
+/* #contents {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#contents.complete {
+    opacity: 1;
+    pointer-events: all;
+} */
 
 #main_body{
     vertical-align: middle;
