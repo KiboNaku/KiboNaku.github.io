@@ -8,7 +8,7 @@
     padding-top: 22vh;
 
     text-align: center;
-    background-color: black;
+    background-color: #002d2b;
 
     float: left;
     border-right: 2px solid #78b7b4;
@@ -18,9 +18,13 @@
     text-decoration: none;
 }
 
-#jump_sidebar a.jump div{
-    padding-top: 5vh;
-    padding-bottom: 5vh;
+#jump_sidebar p{
+    min-width: 80%;
+    max-width: 85%;
+    vertical-align: center;
+    margin: auto;
+
+    padding: 5vh 0;
 
     font-size: 150%;
     color:#C4DFE6;
@@ -28,12 +32,15 @@
 
 #jump_sidebar a.jump:hover div{
     background-color:#C4DFE6;
+}
+
+#jump_sidebar a.jump:hover p{
     color: #002d2b;
 }
 
 @media only screen and (max-width: 1200px){
     
-    #jump_sidebar a.jump div {
+    #jump_sidebar p {
         font-size: 140%;
     }
 }
@@ -44,7 +51,7 @@
         min-width: 80px;
     }
 
-    #jump_sidebar a.jump div {
+    #jump_sidebar p{
         font-size: 100%;
     }
 }
@@ -55,25 +62,7 @@
         min-width: 50px;
     }
 
-    #jump_sidebar a.jump div {
+    #jump_sidebar p {
         font-size: 50%;
-    }
-}
-
-@media only screen and (max-width: 1000px) and (orientation:portrait){
-    #jump_sidebar a.jump div {
-        font-size: 125%;
-    }
-}
-
-@media only screen and (max-width: 700px) and (orientation:portrait){
-    #jump_sidebar a.jump div {
-        font-size: 115%;
-    }
-}
-
-@media only screen and (max-width: 490px) and (orientation:portrait){
-    #jump_sidebar a.jump div {
-        font-size: 110%;
     }
 }

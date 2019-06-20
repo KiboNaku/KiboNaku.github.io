@@ -57,11 +57,14 @@ body {
 }
 
 a#my_github, .contact {
+    clear: both;
     color: white;
     text-decoration: none;  
 } 
 
 a#my_github p, .contact p {
+    clear: both;
+    border: 2px solid white;
     width: 50%;
 
     vertical-align: middle;
@@ -78,12 +81,31 @@ a#my_github p, .contact p {
 }
 
 a#my_github p:hover, .contact:hover p{
+    clear: both;
     background-color: #002d2b;
     border: 2px solid #78b7b4;
 } 
 
 #about_me {
     margin-top: 30vh;
+    min-height: 100vh;
+    clear: both;
+}
+
+img {
+    float: left;
+    opacity: .4;
+    width: 35%;
+    padding: 5% ;
+}
+
+img:hover {
+    opacity: .9;
+}
+
+#about_me p {
+    margin-right: 10%;
+    max-width: 60;
 }
 
 #projects_heading {
@@ -106,11 +128,34 @@ a#my_github p:hover, .contact:hover p{
     padding: 12%    8%;
 }
 
-.project > p.type, .project > p.date {
+.project p.date {
     font-size: 80%;
     color: #95F1E8;
     padding: 2px;
     margin: 2px;
+}
+
+.project li {
+    float: left;
+    font-size: 80%;
+    list-style-type: none;
+    text-align: center;
+    min-width: 100px;
+    width: 15%;
+    padding: 1%;
+    margin: 1%;
+    background-color: #78b7b4;
+    color: #002d2b;
+}
+
+.project li:hover {
+    background-color: #95F1E8;
+}
+
+.project p:last-child {
+    margin-top: 5%;
+    padding-top: 5%;
+    clear: both;
 }
 
 #contact_me {
@@ -147,9 +192,18 @@ a#my_github p:hover, .contact:hover p{
     #intro_h1 span#name{
         font-size: 220%;
     }
+
+    .project li {
+        font-size: 85%;
+    }
 }
 
 @media only screen and (max-width: 800px) {
+    img {
+        float: none;
+        width: 75%;
+        padding-top: 15%;
+    }
     #intro{
         padding-top: 14vh; 
         font-size: 72%;
@@ -169,6 +223,10 @@ a#my_github p:hover, .contact:hover p{
 
     #intro_h1 span#university{
         font-size: 100%;
+    }
+
+    .project li {
+        font-size: 72%;
     }
 }
 
@@ -192,6 +250,10 @@ a#my_github p:hover, .contact:hover p{
     #intro_h1 span#university{
         font-size: 90%;
     }
+
+    .project li {
+        font-size: 67%;
+    }
 }
 
 @media only screen and (max-width: 520px) {
@@ -214,6 +276,11 @@ a#my_github p:hover, .contact:hover p{
 
     #intro_h1 span#university{
         font-size: 80%;
+    }
+
+    .project li {
+        font-size: 60%;
+        min-width: 80px;
     }
 }
 
