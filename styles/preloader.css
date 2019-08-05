@@ -5,6 +5,7 @@
     width: 100%;
     height: 100%;
     transition: 2s;
+    z-index: 100;
 }
 
 #preloader:before {
@@ -26,6 +27,13 @@
     visibility: hidden;
     pointer-events: none;
 } 
+
+#preloadCanvas {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
 
 @keyframes animateColor {
     0%{
@@ -80,6 +88,12 @@
 
     animation: animateBg 4s alternate infinite ease-in-out;
     animation-delay: 1s;
+}
+
+#loader.complete {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 1s, opacity 1s linear;
 }
 
 @keyframes animateBorder {
