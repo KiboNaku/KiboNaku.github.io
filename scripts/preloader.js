@@ -21,7 +21,8 @@ var dots = [],      // will contain all of the dots on the screen
     // preloader-specific
     showName = false;   // preloader condition: show name
 
-var intervalId = null;
+// holds the interval ids (so they can later be closed)
+var intervalId = {dots: null};  
 
 // populates the "dots" array
 let generateDots = () => {
@@ -84,50 +85,53 @@ let generateDots = () => {
     }
 }
 
-generateDots();
-
-
-function preload() {
-    intervalId = setInterval( () => {
+function dotsPrelaoder() {
+    intervalId.dots = setInterval( () => {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         dots.forEach((dot) => {
             dot.draw();
             dot.move();
         });
     }, 50);
-
 }
 
-preload();
-
 function finish_preload(){
-    if(intervalId != null) clearInterval(intervalId);
     var interval = 0;
+    dots.sort((dot1, dot2) => (dot1.xpos + dot1.ypos > dot2.xpos + dot2.ypos) ? 1 : -1);
     dots.forEach(() => {
         setTimeout(() => {
             ctx.clearRect(0, 0, canvas.width, canvas.height);
             dots.forEach((dot) => {dot.draw()})
             dots.shift()
-            console.log(dots.length);
         }, interval)
-        interval += 2000/dots.length;
+        interval += 1000/dots.length;
     });
 }
 
-
 $(window).on("load",function() {
-    $("#preloader").addClass("start");
-    $("#preloader.start").one("animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd", function(){
-        $("#preloader").addClass("complete");
-        $("#loader").addClass("complete");
-        $("#nameDisplay").addClass("show");
+    setTimeout(() => {
+        console.log("ok")
+        finish_preload();
+        $("#loader").addClass("hidden");
         $("#nameDisplay").removeClass("hidden");
-        $("#contents").removeClass("hidden");
-        $("#contents").fadeIn("fast", "swing")
-    });
-});
+        $("#nameDisplay").addClass("show"); // fadeIn animation
+    
+        $("#nameDisplay").one("animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd", function(){
+            $("#nameDisplay").addClass("hidden");
+            $("#preloader").addClass("hidden");
+            
+            $("#contents").removeClass("hidden");
+            $("#contents").fadeIn("fast", "swing")
+        });
+    }, 2000);
+})
+
 
 $(window).on('resize', function(){
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 });
+
+
+generateDots();
+dotsPrelaoder();
