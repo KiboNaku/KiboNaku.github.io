@@ -109,21 +109,19 @@ function finish_preload(){
 }
 
 $(window).on("load",function() {
-    setTimeout(() => {
-        finish_preload();
-        $("#loader").addClass("hidden");
-        $("#nameDisplay").removeClass("hidden");
-        $("#nameDisplay").addClass("show"); // fadeIn animation
-    
-        $("#nameDisplay").one("animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd", function(){
-            // $("#nameBack").addClass("hidden");
-            // $("#preloader").addClass("hidden");
-            $("#preloaderWindow").addClass("hidden");
-            
-            $("#contents").removeClass("hidden");
-            $("#contents").fadeIn("fast", "swing")
-        });
-    }, 2000);
+    finish_preload();
+    $("#loader").addClass("hidden");
+    $("#nameDisplay").removeClass("hidden");
+    $("#nameDisplay").addClass("show"); // fadeIn animation
+
+    $("#nameDisplay").one("animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd", function(){
+        // $("#nameBack").addClass("hidden");
+        // $("#preloader").addClass("hidden");
+        $("#preloaderWindow").addClass("hidden");
+        
+        $("#contents").removeClass("hidden");
+        $("#contents").fadeIn("fast", "swing")
+    });
 })
 
 
