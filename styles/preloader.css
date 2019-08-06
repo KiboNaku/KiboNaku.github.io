@@ -52,6 +52,43 @@
         background-color: #002d2b;
     }
 }
+#nameDisplay {
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    color:#78b7b4;
+    text-shadow: 1px 1px #C4DFE6;
+
+    font-size: 70px;
+    z-index: 100000;
+
+    height: 90px;
+    line-height: 90px;
+    text-align: center;
+}
+
+#nameDisplay.hidden {
+    opacity: 0;
+}
+
+#nameDisplay.show {
+    animation: fadeIn 1s 1 alternate ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
  #loader{
     position: absolute;
