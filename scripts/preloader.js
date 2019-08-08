@@ -13,19 +13,20 @@ var dots = [],      // will contain all of the dots on the screen
     maxSize = 4,
     minSpeed = .3,
     maxSpeed = 2,
-    minAlpha = .6,
-    maxAlpha = 1
+    minAlpha = .4,
+    maxAlpha = .7
     colors = ["255, 255, 255", "122, 255, 117", "128, 255, 223", "255, 141, 128", "157, 50, 250"]
-    numDots = 30 + 2/3*Math.floor(canvas.width*canvas.height/17000),    // number of dots moving on the screen
+    numDots = 30 + Math.floor(canvas.width*canvas.height/14000),    // number of dots moving on the screen
     bufferDistance = 50, // the number of pixels from the edges from the screen from which the dots "bounce"
     // preloader-specific
-    showName = false;   // preloader condition: show name
+    showName = false,
+    finishingPreload = false;   // preloader condition: show name
 
 // holds the interval ids (so they can later be closed)
 var intervalId = {dots: null};  
 
 // populates the "dots" array
-let generateDots = () => {
+function generateDots() {
     for(let i=0; i<numDots; i++){
         let tempRadius = rand(minSize, maxSize);    // lets us use the random value twice
         dots[i] = {
@@ -95,30 +96,34 @@ function dotsPrelaoder() {
     }, 50);
 }
 
-function finish_preload(){
-    var interval = 0;
-    dots.sort((dot1, dot2) => (dot1.xpos + dot1.ypos > dot2.xpos + dot2.ypos) ? 1 : -1);
+function finishPreload(){
+    let interval = 0;
+    finishingPreload = true;
+    sortDots();
     dots.forEach(() => {
         setTimeout(() => {
             ctx.clearRect(0, 0, canvas.width, canvas.height);
             dots.forEach((dot) => {dot.draw()})
             dots.shift()
         }, interval)
-        interval += 1000/dots.length;
+        interval += 650/dots.length;
     });
 }
 
+function sortDots(){
+    let midWidth = canvas.width/2;
+    let midHeight = canvas.height/2;
+    dots.sort((dot1, dot2) => (Math.abs(midWidth-dot1.xpos) + Math.abs(midHeight-dot1.ypos) < Math.abs(midWidth-dot2.xpos) + Math.abs(midHeight-dot2.ypos)) ? 1 : -1);
+}
+
 $(window).on("load",function() {
-    finish_preload();
+    finishPreload();
     $("#loader").addClass("hidden");
     $("#nameDisplay").removeClass("hidden");
     $("#nameDisplay").addClass("show"); // fadeIn animation
 
     $("#nameDisplay").one("animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd", function(){
-        // $("#nameBack").addClass("hidden");
-        // $("#preloader").addClass("hidden");
         $("#preloaderWindow").addClass("hidden");
-        
         $("#contents").removeClass("hidden");
         $("#contents").fadeIn("fast", "swing")
     });
@@ -128,6 +133,7 @@ $(window).on("load",function() {
 $(window).on('resize', function(){
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
+    if(finishingPreload) sortDots();
 });
 
 

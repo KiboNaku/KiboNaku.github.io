@@ -131,8 +131,8 @@ img:hover {
 .project{
     width: 70%;
     vertical-align: center;
-    margin: 0% auto 15% auto;
-    padding: 10% 5%;
+    margin: 0% auto 5% auto;
+    padding: 3% 5%;
 
     border: 5px solid #78b7b4; 
     border-radius: 13%;
@@ -141,7 +141,7 @@ img:hover {
 .project:hover {
     border-width: 7px;
     border-color: #95F1E8;
-    padding: 12%    8%;
+    padding:    4%;
 }
 
 .project p.date {
