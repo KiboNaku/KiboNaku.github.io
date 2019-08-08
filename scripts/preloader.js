@@ -113,7 +113,7 @@ function finishPreload(){
 function sortDots(){
     let midWidth = canvas.width/2;
     let midHeight = canvas.height/2;
-    dots.sort((dot1, dot2) => (Math.abs(midWidth-dot1.xpos) + Math.abs(midHeight-dot1.ypos) < Math.abs(midWidth-dot2.xpos) + Math.abs(midHeight-dot2.ypos)) ? 1 : -1);
+    dots.sort((dot1, dot2) => (Math.abs(midWidth-dot1.xpos) + Math.abs(midHeight-dot1.ypos) > Math.abs(midWidth-dot2.xpos) + Math.abs(midHeight-dot2.ypos)) ? 1 : -1);
 }
 
 $(window).on("load",function() {
