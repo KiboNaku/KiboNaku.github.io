@@ -1,14 +1,22 @@
-
-body {
-    width: 100%;
+                                            
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-#contents.hidden {
+.hidden {
     visibility: hidden;
     position: fixed;
     pointer-events: none;
+}
+
+img {
+    opacity: .7;
+}
+
+img:hover {
+    opacity: 1;
 }
 
 #main_body{
@@ -18,17 +26,25 @@ body {
 }
 
 #intro{
-    background-image: url("../images/robot_car_team_45.png");
+    display: table;
+    background-image: url("../images/robot_car_team_45_16x9.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover; 
-    height: 70vh;
-    padding-top: 24vh;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
     font-size: 90%;
     text-align: center;
 }
 
-#intro h1#intro_h1{
+#intro > div {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#intro > div > #intro_h1{
+    margin-left: auto;
+    margin-right: auto;
     color: #78b7b4;
     text-shadow: 1px 1px #C4DFE6;
 }
@@ -54,13 +70,78 @@ body {
     color: #db6d06;
 }
 
-#main_content{
-    margin: 10% 0; 
+#jump_sidebar {
+    float: left;
+    position: fixed;
+    width: 15vw;
+    height: 100vh;
+
+    border-right: 2px solid #78b7b4;
+    background-color: #002d2b;
+}
+
+#jumps {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    height: 50%;    
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    display: table;
+}
+
+.jump {
+    display: table-row;
+    cursor: pointer;
+    color: #C4DFE6;
+}
+
+.jump:hover {
+    background:#C4DFE6;
+    color: #002d2b;
+}
+
+.jump > div {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-size: calc(10px + (35 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.heading {
+    margin: 10% 0%;
+}
+
+#main_body {
+    padding: 10%;
 }
 
 .main_section{
-    min-height: 70vh;
-    padding: 10%;
+    padding: 30% 0%;
+}
+/* 
+.link_button {
+    clear: both;
+    color: white;
+    text-decoration: none;  
+}
+
+.link_button p {
+    clear: both;
+    border: 2px solid white;
+    width: 50%;
+
+    vertical-align: middle;
+    margin: auto;
+    margin-top: 10%;
+    padding: 4% 2%;
+
+    text-align: center;
+    
+    font-size: 120%;
+    font-weight: bold;
+    
+    background-color: #78b7b4;
 }
 
 .main_section > p{
@@ -82,7 +163,7 @@ a#my_github p, .contact p {
     vertical-align: middle;
     margin: auto;
     margin-top: 10%;
-    padding: 2%;
+    padding: 4% 2%;
 
     text-align: center;
     
@@ -104,25 +185,88 @@ a#my_github p:hover, .contact:hover p{
     clear: both;
 }
 
-img {
+
+#about_me p {
+    margin-right: 10%;
+    max-width: 60;
+}
+
+#headpic {
+    float: left;
+    width: 35%;
+    padding-right: 5% ;
+} */
+
+
+/* 
+.main_section > p{
+    width: 80%;
+    margin: 5%;
+}
+
+a#my_github, .contact {
+    clear: both;
+    color: white;
+    text-decoration: none;  
+} 
+
+a#my_github p, .contact p {
+    clear: both;
+    border: 2px solid white;
+    width: 50%;
+
+    vertical-align: middle;
+    margin: auto;
+    margin-top: 10%;
+    padding: 4% 2%;
+
+    text-align: center;
+    
+    font-size: 120%;
+    font-weight: bold;
+    
+    background-color: #78b7b4;
+}
+
+a#my_github p:hover, .contact:hover p{
+    clear: both;
+    background-color: #002d2b;
+    border: 2px solid #78b7b4;
+} 
+
+#about_me {
+    margin-top: 30vh;
+    min-height: 100vh;
+    clear: both;
+}
+
+
+#about_me p {
+    margin-right: 10%;
+    max-width: 60;
+}
+
+#headpic {
     float: left;
     opacity: .7;
     width: 35%;
     padding-right: 5% ;
 }
 
-img:hover {
+#headpic:hover {
     opacity: 1;
-}
+} */
 
-#about_me div {
-    padding: 5%;
-}
 
-#about_me p {
-    margin-right: 10%;
-    max-width: 60;
-}
+
+/* 
+
+
+
+
+
+
+
 
 #projects_heading {
     padding: 10% 0%;
@@ -135,13 +279,11 @@ img:hover {
     padding: 3% 5%;
 
     border: 5px solid #78b7b4; 
-    border-radius: 13%;
+    border-radius: 5%;
 }
 
 .project:hover {
-    border-width: 7px;
     border-color: #95F1E8;
-    padding:    4%;
 }
 
 .project p.date {
@@ -175,7 +317,8 @@ img:hover {
 }
 
 #contact_me {
-    min-height: 50vh;
+    min-height: 100vh;
+    background: white;
 }
 
 
@@ -193,124 +336,4 @@ img:hover {
 
 .contact_heading {
     font-weight: bold;
-}
-
-@media only screen and (max-width: 1100px) and (orientation:landscape){
-    #intro{
-        padding-top: 19vh;
-        font-size: 85%; 
-    }
-
-    #intro_h1 span#hello{
-        font-size: 170%;
-    } 
-
-    #intro_h1 span#name{
-        font-size: 220%;
-    }
-
-    .project li {
-        font-size: 85%;
-    }
-}
-
-@media only screen and (max-width: 800px) {
-    img {
-        float: none;
-        width: 75%;
-        padding-top: 15%;
-    }
-    #intro{
-        padding-top: 14vh; 
-        font-size: 72%;
-    }
-
-    #intro_h1 span#hello{
-        font-size: 170%;
-    } 
-
-    #intro_h1 span#name{
-        font-size: 200%;
-    }
-
-    #intro_h1 span#major{
-        font-size: 100%;
-    }
-
-    #intro_h1 span#university{
-        font-size: 100%;
-    }
-
-    .project li {
-        font-size: 72%;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    #intro{
-        font-size: 67%;
-    }
-
-    #intro_h1 span#hello{
-        font-size: 150%;
-    } 
-
-    #intro_h1 span#name{
-        font-size: 190%;
-    }
-
-    #intro_h1 span#major{
-        font-size: 90%;
-    }
-
-    #intro_h1 span#university{
-        font-size: 90%;
-    }
-
-    .project li {
-        font-size: 67%;
-    }
-}
-
-@media only screen and (max-width: 520px) {
-    #intro{
-        padding-top: 12vh; 
-        font-size: 60%;
-    }
-
-    #intro_h1 span#hello{
-        font-size: 90%;
-    } 
-
-    #intro_h1 span#name{
-        font-size: 110%;
-    }
-
-    #intro_h1 span#major{
-        font-size: 80%;
-    }
-
-    #intro_h1 span#university{
-        font-size: 80%;
-    }
-
-    .project li {
-        font-size: 60%;
-        min-width: 80px;
-    }
-}
-
-@media only screen and (max-width: 1000px) and (orientation:portrait){
-    #intro{
-        padding-top: 31vh; 
-    }
-
-    #intro_h1 span#hello{
-        font-size: 150%;
-    } 
-
-    #intro_h1 span#name{
-        font-size: 200%;
-    }
-
-}
+} */
