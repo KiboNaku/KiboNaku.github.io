@@ -2,7 +2,7 @@
 ::-webkit-scrollbar {
     width: 0px;
 }
-/* 
+
 ::-webkit-scrollbar-track {
     background: #002d2b; 
 }
@@ -13,29 +13,12 @@
 
 ::-webkit-scrollbar-thumb:hover {
     background: #C4DFE6; 
-} */
+}
 
 body {
     font-family: 'EB Garamond', serif;
     color:#78b7b4;
     background-color: #002d2b;
-    
     /* calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width]))); */
-    font-size: calc(10px + (20 - 10) * ((100vw - 300px) / (1600 - 300))); 
-}
-
-h1, h2, h3, h4, h5, h6 {
-    color:#C4DFE6; 
-}
-
-a {
-    color: #95F1E8;
-}
-
-a:visited {
-    color:#78b7b4;
-}
-
-a:hover {
-    color: white;
+    font-size: calc(8px + (25 - 8) * ((100vw - 300px) / (2100 - 300))); 
 }

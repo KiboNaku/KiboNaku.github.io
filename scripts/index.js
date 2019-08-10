@@ -85,4 +85,11 @@ $(window).on("load",function() {
     // }).scroll();
   });
 
-  size_main();
+$(".contact_email").on('click', function(event){
+    event.stopPropagation();
+    event.stopImmediatePropagation();
+    
+    window.location.href = "mailto:andy.ni@utexas.edu";
+});
+
+size_main();

@@ -11,6 +11,10 @@
     pointer-events: none;
 }
 
+.clickable_div {
+    cursor: pointer;
+}
+
 img {
     opacity: .7;
 }
@@ -19,13 +23,13 @@ img:hover {
     opacity: 1;
 }
 
-#main_body{
+#postloader_contents{
     vertical-align: middle;
     margin: auto;
-    float: right;
+    padding: auto;
 }
 
-#intro{
+#landing_intro{
     display: table;
     background-image: url("../images/robot_car_team_45_16x9.png");
     background-position: center;
@@ -33,54 +37,62 @@ img:hover {
     background-size: cover;
     height: 100vh;
     width: 100vw;
-    font-size: 90%;
     text-align: center;
 }
 
-#intro > div {
+#landing_intro > div {
     display: table-cell;
     vertical-align: middle;
-}
-
-#intro > div > #intro_h1{
-    margin-left: auto;
-    margin-right: auto;
     color: #78b7b4;
-    text-shadow: 1px 1px #C4DFE6;
+    font-size: 200%;
 }
 
-#intro_h1 span#hello{
-    font-size: 190%;
-    color: red;
-} 
-
-#intro_h1 span#name{
-    font-size: 270%;
-    font-style: italic;
-    color:#C4DFE6;
+#intro_text {
+    text-shadow: 1px 1px white;
+    padding: 3%;
 }
 
-#intro_h1 span#major{
-    font-size: 110%;
-    color: #C4DFE6;
+#intro_text #name {
+    color: #95F1E8;
+    text-shadow: 1px 1px #78b7b4;
+    font-size: 180%;
 }
 
-#intro_h1 span#university{
-    font-size: 110%;
+#intro_text #additional_details {
+    font-size: 75%;
+}
+
+#intro_text #major, #intro_text #interest {
     color: #db6d06;
 }
+
+#quick_contact {
+    max-width: 50%;
+    margin: auto;
+    border: 1px solid #C4DFE6;
+    color: #C4DFE6;
+    font-size: 70%;
+}
+
+#quick_contact:hover {
+    border: 1px solid #95F1E8;
+    color: #95F1E8;
+}
+
+/* 
+
 
 #jump_sidebar {
     float: left;
     position: fixed;
-    width: 15vw;
+    width: calc(60px + (220 - 60) * ((100vw - 300px) / (2100 - 300)));
     height: 100vh;
 
     border-right: 2px solid #78b7b4;
     background-color: #002d2b;
 }
 
-#jumps {
+#jump_sidebar > #jumps {
     width: 100%;
     position: absolute;
     top: 50%;
@@ -90,59 +102,44 @@ img:hover {
     display: table;
 }
 
-.jump {
+#jumps > .jump {
     display: table-row;
     cursor: pointer;
     color: #C4DFE6;
 }
 
-.jump:hover {
+#jumps > .jump:hover {
     background:#C4DFE6;
     color: #002d2b;
 }
 
-.jump > div {
+#jumps > .jump > div {
     display: table-cell;
     vertical-align: middle;
     text-align: center;
-    font-size: calc(10px + (35 - 14) * ((100vw - 300px) / (1600 - 300)));
-}
-
-.heading {
-    margin: 10% 0%;
+    font-size: calc(9px + (34 - 9) * ((100vw - 300px) / (2100 - 300)));
 }
 
 #main_body {
+    background: black;
+
+
+
     padding: 10%;
+}
+
+.project_img {
+    width: 50%;
+    height: auto;
+} */
+
+/* .heading {
+    margin: 10% 0%;
 }
 
 .main_section{
     padding: 30% 0%;
 }
-/* 
-.link_button {
-    clear: both;
-    color: white;
-    text-decoration: none;  
-}
-
-.link_button p {
-    clear: both;
-    border: 2px solid white;
-    width: 50%;
-
-    vertical-align: middle;
-    margin: auto;
-    margin-top: 10%;
-    padding: 4% 2%;
-
-    text-align: center;
-    
-    font-size: 120%;
-    font-weight: bold;
-    
-    background-color: #78b7b4;
-}
 
 .main_section > p{
     width: 80%;
@@ -163,7 +160,7 @@ a#my_github p, .contact p {
     vertical-align: middle;
     margin: auto;
     margin-top: 10%;
-    padding: 4% 2%;
+    padding: 1% 2%;
 
     text-align: center;
     
@@ -171,6 +168,12 @@ a#my_github p, .contact p {
     font-weight: bold;
     
     background-color: #78b7b4;
+}
+
+a#my_github p:hover, .contact:hover p{
+    clear: both;
+    background-color: #002d2b;
+    border: 2px solid #78b7b4;
 }
 
 a#my_github p:hover, .contact:hover p{
@@ -191,81 +194,11 @@ a#my_github p:hover, .contact:hover p{
     max-width: 60;
 }
 
-#headpic {
+#portrait {
     float: left;
     width: 35%;
     padding-right: 5% ;
-} */
-
-
-/* 
-.main_section > p{
-    width: 80%;
-    margin: 5%;
 }
-
-a#my_github, .contact {
-    clear: both;
-    color: white;
-    text-decoration: none;  
-} 
-
-a#my_github p, .contact p {
-    clear: both;
-    border: 2px solid white;
-    width: 50%;
-
-    vertical-align: middle;
-    margin: auto;
-    margin-top: 10%;
-    padding: 4% 2%;
-
-    text-align: center;
-    
-    font-size: 120%;
-    font-weight: bold;
-    
-    background-color: #78b7b4;
-}
-
-a#my_github p:hover, .contact:hover p{
-    clear: both;
-    background-color: #002d2b;
-    border: 2px solid #78b7b4;
-} 
-
-#about_me {
-    margin-top: 30vh;
-    min-height: 100vh;
-    clear: both;
-}
-
-
-#about_me p {
-    margin-right: 10%;
-    max-width: 60;
-}
-
-#headpic {
-    float: left;
-    opacity: .7;
-    width: 35%;
-    padding-right: 5% ;
-}
-
-#headpic:hover {
-    opacity: 1;
-} */
-
-
-
-/* 
-
-
-
-
-
-
 
 
 #projects_heading {
@@ -336,4 +269,4 @@ a#my_github p:hover, .contact:hover p{
 
 .contact_heading {
     font-weight: bold;
-} */
+}  */
