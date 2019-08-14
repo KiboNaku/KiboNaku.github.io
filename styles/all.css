@@ -22,3 +22,15 @@ body {
     /* calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width]))); */
     font-size: calc(8px + (25 - 8) * ((100vw - 300px) / (2100 - 300))); 
 }
+
+a {
+    color: #95F1E8;
+}
+
+a:visited {
+    color:#78b7b4;
+}
+
+a:hover {
+    color: white;
+}

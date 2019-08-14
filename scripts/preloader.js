@@ -1,6 +1,6 @@
 
 // initialize canvas-related variables
-var canvas = document.getElementById("preloadCanvas"),
+var canvas = document.getElementById("preloader_canvas"),
     ctx = canvas.getContext("2d");
 
 canvas.width = window.innerWidth;
@@ -117,15 +117,17 @@ function sortDots(){
 }
 
 $(window).on("load",function() {
+    console.log("finished")
     finishPreload();
     $("#loader").addClass("hidden");
-    $("#nameDisplay").removeClass("hidden");
-    $("#nameDisplay").addClass("show"); // fadeIn animation
+    $("#name_display").removeClass("hidden");
+    $("#name_display").addClass("show"); // fadeIn animation
 
-    $("#nameDisplay").one("animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd", function(){
-        $("#preloaderWindow").addClass("hidden");
-        $("#contents").removeClass("hidden");
-        $("#contents").fadeIn("fast", "swing")
+    $("#name_display").one("animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd", function(){
+        console.log("ok")
+        $("#preloader_window").addClass("hidden");
+        $("#postloader_contents").removeClass("hidden");
+        $("#postloader_contents").fadeIn("fast", "swing")
     });
 })
 
