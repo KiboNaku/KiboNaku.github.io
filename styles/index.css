@@ -6,6 +6,7 @@
 }
 
 .hidden {
+    opacity: 0;
     visibility: hidden;
     position: fixed;
     pointer-events: none;
@@ -27,6 +28,10 @@ img:hover {
     vertical-align: middle;
     margin: auto;
     padding: auto;
+}
+
+.fadeIn {
+    animation: fadeIn 1s ease-in;
 }
 
 #nav_sidebar {

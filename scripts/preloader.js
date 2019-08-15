@@ -119,17 +119,15 @@ function sortDots(){
 }
 
 $(window).on("load",function() {
-    console.log("finished")
-    finishPreload();
     $("#loader").addClass("hidden");
+    finishPreload();
     $("#name_display").removeClass("hidden");
     $("#name_display").addClass("show"); // fadeIn animation
 
     $("#name_display").one("animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd", function(){
-        console.log("ok")
         $("#preloader_window").addClass("hidden");
         $("#postloader_contents").removeClass("hidden");
-        $("#postloader_contents").fadeIn("fast", "swing")
+        $("#postloader_contents").addClass("fadeIn")
     });
 })
 
