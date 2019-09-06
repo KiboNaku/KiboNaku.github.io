@@ -203,7 +203,20 @@ img:hover {
     display: inline-block;
 }
 
-.project .project_title {
+#other_projects > div {
+    padding: 2%;
+    border: 3px solid #C4DFE6;
+    width: 33%;
+    float: left;
+}
+
+#my_projects .project:hover {
+    background: black;
+    border: 4px solid #95F1E8 !important; 
+    transform: scale(1.1);
+}
+
+.project_title {
     color: #C4DFE6;
     font-size: 150%;
 }
@@ -222,11 +235,6 @@ img:hover {
     float: right;
 
     transition: transform .2s; 
-}
-
-.project:hover{
-    background: black;
-    border: 4px solid #95F1E8 !important    ; 
 }
 
 .project_image > div {
@@ -259,11 +267,17 @@ img:hover {
 }
 
 @media only screen and (max-width: 750px){
+    #other_projects > div {
+        width: 50%;
+    }
     .project .project_image {
         width: 50%;
     }
 }
 @media only screen and (max-width: 300px){
+    #other_projects > div {
+        width: 100%;
+    }
     .project .project_image {
         width: 100%;
     }
@@ -287,6 +301,11 @@ img:hover {
 
 .links {
     clear: left;
+}
+
+#contact_me {
+    clear: left;
+    padding-top: 10%;
 }
 
 #contact_me > #contact_email {
