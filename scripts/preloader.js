@@ -27,7 +27,7 @@ var intervalId = {dots: null};
 
 // populates the "dots" array
 function generateDots() {
-    console.log("generating dots")
+    // console.log("generating dots")
     for(let i=0; i<numDots; i++){
         let tempRadius = rand(minSize, maxSize);    // lets us use the random value twice
         dots[i] = {
@@ -88,7 +88,7 @@ function generateDots() {
 }
 
 function dotsPrelaoder() {
-    console.log("dots preloader")
+    // console.log("dots preloader")
     intervalId.dots = setInterval( () => {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         dots.forEach((dot) => {
