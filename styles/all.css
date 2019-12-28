@@ -17,10 +17,10 @@
 
 body {
     font-family: 'EB Garamond', serif;
-    color:#78b7b4;
-    background-color: #002d2b;
+    color:#6fc7c3;
+    background-color: #000000;
     /* calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width]))); */
-    font-size: calc(8px + (25 - 8) * ((100vw - 300px) / (2100 - 300))); 
+    font-size: calc(12px + (28 - 12) * ((100vw - 300px) / (2100 - 300))); 
 }
 
 a {
@@ -28,9 +28,29 @@ a {
 }
 
 a:visited {
-    color:#78b7b4;
+    color:#6fc7c3;
 }
 
 a:hover {
     color: white;
+}
+
+.boldFont {
+    font-weight: bold;
+}
+
+.txtColorTitle {
+    color: #C4DFE6;
+}
+
+.txtColorSub {
+    color: #95F1E8;
+}
+
+.txtColorPlain {
+    color: #6fc7c3;
+}
+
+.txtColorBurntOrange {
+    color: #db6d06;
 }
