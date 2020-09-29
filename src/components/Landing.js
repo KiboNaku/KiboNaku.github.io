@@ -6,15 +6,14 @@ class Landing extends Component {
     render() {
 
         return (
-            <main id="landing-main">
-                <div >
-                    
+            <main id="landing-main" className="jumbotron vertical-center">
+                <div className="container">
                     <p>
-                        Hello, my name is
+                        Hello, I'm <span className="name">Andy Ni</span>.
                     </p>
                         
                     <p>
-                        Andy Ni
+                        I'm a junior <span className="major">Computer Engineering</span> student at <span className="university">UT Austin</span>.
                     </p>
 
                     <a>Contact me</a>
