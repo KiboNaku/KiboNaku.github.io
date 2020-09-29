@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/KiboNaku.github.io/static/css/main.b4fe1218.chunk.css",
+    "main.js": "/KiboNaku.github.io/static/js/main.36c9cdcd.chunk.js",
+    "main.js.map": "/KiboNaku.github.io/static/js/main.36c9cdcd.chunk.js.map",
+    "runtime-main.js": "/KiboNaku.github.io/static/js/runtime-main.c48b5e90.js",
+    "runtime-main.js.map": "/KiboNaku.github.io/static/js/runtime-main.c48b5e90.js.map",
+    "static/css/2.d9ad5f5c.chunk.css": "/KiboNaku.github.io/static/css/2.d9ad5f5c.chunk.css",
+    "static/js/2.3ba3d831.chunk.js": "/KiboNaku.github.io/static/js/2.3ba3d831.chunk.js",
+    "static/js/2.3ba3d831.chunk.js.map": "/KiboNaku.github.io/static/js/2.3ba3d831.chunk.js.map",
+    "index.html": "/KiboNaku.github.io/index.html",
+    "precache-manifest.c072eb1f7a807c63afb577550f6ce80b.js": "/KiboNaku.github.io/precache-manifest.c072eb1f7a807c63afb577550f6ce80b.js",
+    "service-worker.js": "/KiboNaku.github.io/service-worker.js",
+    "static/css/2.d9ad5f5c.chunk.css.map": "/KiboNaku.github.io/static/css/2.d9ad5f5c.chunk.css.map",
+    "static/css/main.b4fe1218.chunk.css.map": "/KiboNaku.github.io/static/css/main.b4fe1218.chunk.css.map",
+    "static/js/2.3ba3d831.chunk.js.LICENSE.txt": "/KiboNaku.github.io/static/js/2.3ba3d831.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c48b5e90.js",
+    "static/css/2.d9ad5f5c.chunk.css",
+    "static/js/2.3ba3d831.chunk.js",
+    "static/css/main.b4fe1218.chunk.css",
+    "static/js/main.36c9cdcd.chunk.js"
+  ]
+}
